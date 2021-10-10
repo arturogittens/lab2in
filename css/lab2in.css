@@ -1,4 +1,11 @@
 .lab2in-label:hover{
     border-bottom:dashed 1px goldenrod;
     cursor: text;
+    padding: 5px;
+    background-color: goldenrod;
+    color: gray;
+}
+
+.lab2in-input{
+    display: none;
 }

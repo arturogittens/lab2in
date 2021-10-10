@@ -23,24 +23,22 @@
     <div class="row">
         <div class="col-12 mb-3">
             <label><strong>Nombre de usuario</strong></label>
-            <div class="lab2in-label1">Arturo Gittens</div>
+            <input type="text" name="nombre-usuario" class="lab2in-input form-control">
         </div>
         <div class="col-12 mb-3">
             <label><strong>Correo electrónico</strong></label>
-            <div class="lab2in-label">arturo@gmail.com</div>
+            <input type="text" name="correo-electronico" class="lab2in-input form-control" value="">
         </div>
         <div class="col-12 mb-3">
             <label><strong>Ubicación</strong></label>
-            <div class="lab2in-label">Condado del Rey, Ciudad de Panamá</div>
+            <input type="text" name="ubicacion" class="lab2in-input form-control">
         </div>
     </div>
 </div>
 
 <script>
     $(document).ready(function(){
-        var lab2in = new Lab2in.init({
-            inputLabel:'.lab2in-label1'
-        });
+        var lab2in = new Lab2in.init();
     });
 </script>
 </body>
