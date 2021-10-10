@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="lab2in.js"></script>
-    <title>Document</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lab2in.css">
+    <script src="js/lab2in.js"></script>
+    <title>Lab2in</title>
 </head>
 <body>
-.
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="bg-primary text-light p-3">Demo de Lib2In</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <label><strong>Nombre de usuario</strong></label>
+            <div class="lab2in-label1">Arturo Gittens</div>
+        </div>
+        <div class="col-12 mb-3">
+            <label><strong>Correo electrónico</strong></label>
+            <div class="lab2in-label">arturo@gmail.com</div>
+        </div>
+        <div class="col-12 mb-3">
+            <label><strong>Ubicación</strong></label>
+            <div class="lab2in-label">Condado del Rey, Ciudad de Panamá</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        var lab2in = new Lab2in.init({
+            inputLabel:'.lab2in-label1'
+        });
+    });
+</script>
 </body>
 </html>

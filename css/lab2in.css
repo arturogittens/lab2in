@@ -1,0 +1,4 @@
+.lab2in-label:hover{
+    border-bottom:dashed 1px goldenrod;
+    cursor: text;
+}
